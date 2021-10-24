@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+}
+
+html, body {
+    display: grid; /* estudar isso aí */
+    place-items: column;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased; /* estudar isso aí */
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 812px;
+}
+
+.container {
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--grey);
+}
+
+.avatar {
+    margin-top: 11.5rem;
+    position: relative;
+}
+
+.avatar span {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+}
+
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(0 26%, 50% 0, 100% 26%, 100% 77%, 52% 100%, 0 77%);
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+p {
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
